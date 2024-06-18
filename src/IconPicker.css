@@ -1,0 +1,114 @@
+.App {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #c398e2; /* Background color for entire page */
+
+}
+.icon-picker-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+    background-color: #f5cd08; /* Added background color */
+    margin-left: 50px;
+    margin-top: 34px;
+  }
+  
+  /* Modal styling for the icon picker */
+  .icon-picker-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    background: #0ae9c4; /* Updated background color */
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 12px;
+    width: 500px; /* Fixed width for the picker */
+    margin-top: 30px;
+  }
+  
+  /* Grid layout for the icons */
+  .icon-picker-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+    background: #0ae9c4; /* Added background color */
+    padding-left: 35px;
+  }
+  
+  /* Styling for each icon item */
+  .icon-picker-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 3px solid black;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    background-color: #f5cd08; /* Added background color */
+  }
+  
+  /* Hover effect for each icon item */
+  .icon-picker-item:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Pagination controls */
+  .icon-picker-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+  }
+  
+  /* Styling for pagination buttons */
+  .icon-picker-pagination button {
+    background-color: #007bff;
+    color: white;
+    border: 2px solid black;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 25%;
+  }
+
+  .page-info {
+    background-color: #f0f0f0;
+    color: #555;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    font-size: 0.875em; /* Smaller font size */
+  }
+  
+  /* Hover effect for pagination buttons */
+  .icon-picker-pagination button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling for the close button */
+  .icon-picker-close {
+    display: inline;
+    margin-top: 25px;
+    background-color: #dc3545;
+    color: white;
+    border: 2px solid black;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 50%; /* Stretch across the width of the picker */
+    text-align: center; /* Center align text */
+  }
+  
